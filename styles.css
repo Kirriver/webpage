@@ -1,0 +1,81 @@
+/* 引入Lato字体 */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
+}
+
+/* 基础样式 */
+body {
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+a:hover {
+  color: #f09228;
+  text-decoration: underline;
+}
+body, td, p, a {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  color: #333;
+}
+strong {
+  font-weight: 700;
+}
+heading {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #2c3e50;
+  border-bottom: 2px solid #1772d0;
+  padding-bottom: 5px;
+  display: block;
+  margin-bottom: 10px;
+}
+papertitle {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+name {
+  font-family: 'Lato', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+/* 图片悬停效果 */
+.hoverZoomLink {
+  transition: transform 0.3s ease;
+}
+.hoverZoomLink:hover {
+  transform: scale(1.05);
+}
+
+/* 响应式调整 */
+@media (max-width: 600px) {
+  table {
+    width: 95% !important;
+  }
+  name {
+    font-size: 24px;
+  }
+  td {
+    display: block;
+    width: 100% !important;
+    text-align: center !important;
+  }
+}
+
